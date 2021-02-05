@@ -36,12 +36,13 @@ function addNewTask(field) {
 function displayStoredTasks(list) {
     if (localStorage.length) {
         for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
             let li = document.createElement('li');
             let div = document.createElement('div');
             div.classList.add('delete-task');
             div.textContent = 'X';
             li.classList.add('task-collection__item');
-            li.textContent = localStorage.getItem(`task#${i + 1}`);
+            li.textContent = localStorage.getItem(key);
             li.appendChild(div);
             list.appendChild(li);
         }
