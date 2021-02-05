@@ -1,0 +1,144 @@
+body {
+    position: relative;
+    font: 14px sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.task-input, 
+.task-list {
+    padding: 20px;
+}
+
+.task-input {
+    border-bottom: 2px solid black;
+}
+
+.task-collection {
+    list-style: none;
+    border: 1px solid #e0e0e0;
+    padding-left: 0;
+}
+
+.task-collection .task-collection__item {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.task-collection__item:last-child {
+    border-bottom: none;
+}
+
+.task-collection__item.default {
+    text-align: center;
+    color: red;
+}
+
+.delete-task {
+    float: right;
+    width: 9.5px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.task-input-field {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+  
+.input__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.input__field::placeholder {
+    color: transparent;
+}
+
+.input__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: gray;
+}
+
+/* .input__field:focus {
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+}
+
+.input__field:focus ~ .input__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: gray;
+    font-weight:700;    
+} */
+
+.input__field:required {
+    box-shadow: none;
+}
+
+.input__field:invalid {
+    box-shadow: none;
+}
+
+.btn {
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+  
+  /*btn_background*/
+.effect01 {
+    color: #FFF;
+    border: 4px solid #000;
+    box-shadow:0px 0px 0px 1px #000 inset;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-notification {
+    display: none;
+    font-size: 32px;
+    color:red;
+}

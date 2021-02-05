@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="task-input">
+            <div class="tasks-title">
+                <h1>Task List</h1>
+            </div>
+            <div class="task-add">
+                <div class="task-input-field">
+                    <input type="text" class="input__field" name="new_task" id="new_task">
+                    <label for="new_task" class="input__label">New Task</label>
+                </div>
+                <div class="cont">
+                    <div class="btn effect01"><span>New Task</span></div>
+                    <div class="error-notification">Field can't be empty</div>
+                </div>
+            </div>
+        </div>
+        <div class="task-list">
+            <div class="tasks-title">
+                <h1>Tasks</h1>
+            </div>
+            <div class="task-input-field">
+                <input type="text" class="input__field" name="filter_task" id="filter_task">
+                <label for="filter_task" class="input__label">Filter Task</label>
+            </div>
+            <ul class="task-collection">
+
+            </ul>
+            <div class="btn effect01"><span>Clear Tasks</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
