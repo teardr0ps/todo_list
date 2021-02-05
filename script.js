@@ -58,7 +58,7 @@ function displayFilteredTasks(value) {
 
     if (value) {
         list.forEach(item => {
-            if (item.textContent.indexOf(value) === -1) {
+            if (item.textContent.toLowerCase().indexOf(value.toLowerCase()) === -1) {
                 item.style.display = 'none'
             }
         });
@@ -98,7 +98,7 @@ filterTaskField.addEventListener('keyup', () => {
 ul.addEventListener('click', (e) => {
     const target = e.target;
 
-    if (target && target.classList.contains('delete-task')) {
+    if (target && target.classList.contains('delete-task') && confirm('Are you sure?')) {
         for (let i = 0; i < localStorage.length; i++) {
             let key = localStorage.key(i);
             if (localStorage.getItem(key) === target.parentNode.textContent.slice(0, -1)) {
